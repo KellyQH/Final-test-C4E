@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.border-box {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.selectors {
+    position: relative;
+}
+
+.bets {
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-bottom-right {
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+}
+
+
+.btn-fixedA, .btn-fixedB {
+    width: 80px;
+    height: 40px;
+}
+
+.img-fixed {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.hver:hover {
+    transform: translate3d(0, -.125rem, 0);
+}
+
+.img-random {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.disabled {
+    pointer-events: none;
+}
+

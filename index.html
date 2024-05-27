@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center justify-content-center vh-100">
+        <section class="row justify-content-center align-items-center position-relative mb-4 w-100">
+            <div class="col-auto border-box random">
+                <img src="./images/bau.png" alt="random" class="img-fluid img-random">
+            </div>
+            <div class="col-auto border-box random">
+                <img src="./images/bau.png" alt="random" class="img-fluid img-random">
+            </div>
+            <div class="col-auto border-box random">
+                <img src="./images/bau.png" alt="random" class="img-fluid img-random">
+            </div>
+            <div class="position-absolute button-bottom-right">
+                <button class="btn btn-success btn-fixedA" onclick="disableFunction()">Quay</button>
+            </div>
+        </section>
+
+        <section class="row mt-5 justify-content-center align-items-center position-relative w-100">
+            <div class="col-auto border-box hver">
+                <img src="./images/bau.png" alt="bau" class="img-fluid img-fixed" data-bets="0" data-name="bau">
+                <span class="bets">0</span>
+            </div>
+            <div class="col-auto border-box hver">
+                <img src="./images/cua.png" alt="cua" class="img-fluid img-fixed" data-bets="0" data-name="cua">
+                <span class="bets">0</span>
+            </div>
+            <div class="col-auto border-box hver">
+                <img src="./images/tom.png" alt="tom" class="img-fluid img-fixed" data-bets="0" data-name="tom">
+                <span class="bets">0</span>
+            </div>
+            <div class="col-auto border-box hver">
+                <img src="./images/ca.png" alt="ca" class="img-fluid img-fixed" data-bets="0" data-name="ca">
+                <span class="bets">0</span>
+            </div>
+            <div class="col-auto border-box hver">
+                <img src="./images/huou.png" alt="huou" class="img-fluid img-fixed" data-bets="0" data-name="huou">
+                <span class="bets">0</span>
+            </div>
+            <div class="col-auto border-box hver">
+                <img src="./images/ga.png" alt="ga" class="img-fluid img-fixed" data-bets="0" data-name="ga">
+                <span class="bets">0</span>
+            </div>
+            <div class="position-absolute button-bottom-right">
+                <button class="btn btn-success btn-fixedB">Đặt lại</button>
+            </div>
+        </section>
+
+        <section class="mt-4 w-100">
+            <p class="text-left">Lưu ý:</p>
+            <ul class="text-left">
+                <li>Số lần đặt ở một 'Hình' sẽ là số lần xuất hiện của các 'Hình' trên 'Kết quả'</li>
+                <li>Tổng số lần đặt tối đa là 3</li>
+            </ul>
+            <div id="resultMessage" class="text-center mt-3"></div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
